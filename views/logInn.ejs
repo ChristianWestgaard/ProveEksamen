@@ -7,15 +7,23 @@
         <div class="Top">
             <%- include('partials/nav.ejs') %>
         </div>
-        <div class="Items"></div>
+        <div class="Items">
             <div class="l5 lBox">
-                
-                <h3>Username</h3><br>
-                <input class="liInput" id="liUsername" type="text" placeholder="Username"><br>
-                <h3>Password</h3><br>
-                <input class="liInput" id="liPassword" type="password" placeholder="Password"><br>
-                <button onclick="logInn()">Log Inn</button>
-            </div>   
-
-    <script src="/db.js"></script>
+                <h2>Log Inn</h2>
+                <h3>Username</h3>
+                <input class="liInput" id="liUsername" type="text" placeholder="Username">
+                <h3>Password</h3>
+                <input class="liInput" id="liPassword" type="password" placeholder="Password">
+                <button id="liB" onclick="logInn()">Log Inn</button><br><br>
+            </div>
+            <div class="l5 lBox">   
+                <h2>Sign Up</h2>
+                <h3>Username</h3>
+                <input class="liInput" id="suUsername" type="text" placeholder="Username">
+                <h3>Password</h3>
+                <input class="liInput" id="suPassword" type="password" placeholder="Password">
+                <button id="suB" onclick="signUp()">Sign Up</button>
+            </div>
+        </div>
+    <script src="/app.js" defer></script>
 <%- include('partials/end.ejs') %>

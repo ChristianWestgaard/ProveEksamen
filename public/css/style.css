@@ -63,7 +63,7 @@
 }
 
 .l5{
-  display: flex;
+  display: grid;
   text-align: center;
   align-items: center;
   justify-content: center;
