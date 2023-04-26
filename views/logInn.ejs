@@ -1,0 +1,21 @@
+
+
+<%- include('partials/head.ejs') %>
+
+
+<body class="container">
+        <div class="Top">
+            <%- include('partials/nav.ejs') %>
+        </div>
+        <div class="Items"></div>
+            <div class="l5 lBox">
+                
+                <h3>Username</h3><br>
+                <input class="liInput" id="liUsername" type="text" placeholder="Username"><br>
+                <h3>Password</h3><br>
+                <input class="liInput" id="liPassword" type="password" placeholder="Password"><br>
+                <button onclick="logInn()">Log Inn</button>
+            </div>   
+
+    <script src="/db.js"></script>
+<%- include('partials/end.ejs') %>
