@@ -1,4 +1,5 @@
 
+const { log } = require('console');
 const { MongoClient } = require('mongodb');
 // import mongoose from 'mongoose'
 
@@ -9,7 +10,17 @@ async function main() {
    const uri= 'mongodb+srv://christianwestgaard04:Admin1@store.rrovops.mongodb.net/?retryWrites=true&w=majority';
    const client = new MongoClient(uri);
 
-   
+   async function listDatabases(client){
+      const users = client.db("proveeksamen").collection("users").find()
+      const shoes = client.db("proveeksamen").collection("shoes").find()
+
+      users.forEach(collection => {
+         console.log("- " + users);
+      });
+      shoes.forEach(collection => {
+         console.log("- " + shoes);
+      })
+   }   
 
    try{
       await client.connect(); 
@@ -20,7 +31,9 @@ async function main() {
    }
 }
 
-// main().catch(console.error);
+main().catch(console.error);
+
+listDatabases(client)
 
 // async function createUser(client, newListing) {
 //    const result = await client.db("proveeksamen").collection("users").insertOne(newListing);
