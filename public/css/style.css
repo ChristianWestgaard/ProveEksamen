@@ -44,11 +44,8 @@
 }
 
 .nav{
-  width: 100%;
   color: black;
-  background-color: #e6a4bb;
-  display: flex;
-  margin: 3fr;
+  width: 100%;
 }
 
 .liInput{
@@ -73,3 +70,59 @@
 .iImg {
   text-align: center;
 } 
+
+.submitParent{
+
+}
+
+
+.liT{
+  margin-top: 5vw;
+  margin-left: 10px;
+}
+
+.liP{
+  text-align: center;
+  margin-top: 0.5vw;
+  height: 30px;
+  width: 90px;
+}
+
+.liU{
+  text-align: center;
+  margin-top: 1vw;
+  height: 30px;
+  width: 90px;
+}
+
+.liD{
+  margin-left:10vw ;
+}
+
+.liBD{
+  margin-left: 11vw;
+  margin-top: 1vw;
+;
+}
+
+.liB{
+  width: 70px;
+  height: 40px;
+}
+
+.addshoespage {  display: grid;
+  grid-template-columns: 0.6fr 2fr 0.5fr;
+  grid-template-rows: 0.4fr 1.9fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav nav nav"
+    ". addShoes ."
+    "footer footer footer";
+}
+
+.nav { grid-area: nav; }
+
+.addShoes { grid-area: addShoes; }
+
+.footer { grid-area: footer; }

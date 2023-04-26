@@ -1,0 +1,15 @@
+<%- include('partials/head.ejs') %>
+
+
+<div class="addshoespage">
+    <div class="nav"><%- include('partials/nav.ejs') %></div>
+    <div class="addShoes">
+        <input id="asM" type="text" placeholder="Merke">
+        <input id="asMo" type="text" placeholder="Modell">
+        <input id="asF" type="text" placeholder="Farge">
+        <button onclick="addShoe()">Submit</button>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <script type="module" src="/db.js"></script>
+<%- include('partials/end.ejs') %>
